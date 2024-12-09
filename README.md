@@ -1,39 +1,35 @@
 # used_car_sales
 Relational Database &amp; SQL Project
 Used Car Sales Database Project
-Deskripsi Proyek
-Proyek ini bertujuan untuk menganalisis data penjualan mobil bekas menggunakan PostgreSQL. Database ini mencakup informasi tentang mobil, riwayat penawaran harga, dan data pengguna. Hasil analisis dari database ini dapat digunakan untuk memahami pola penawaran harga dan popularitas model mobil di pasar.
+Project Description
+This project aims to analyze used car sales data using PostgreSQL. The database includes information about cars, bid history, and user data. The analysis results can help understand bidding patterns and the popularity of car models in the market.
 
-Struktur Database
-Tabel Utama:
-products: Menyimpan data mobil (merk, model, tahun, dan harga).
-bids: Menyimpan riwayat penawaran harga yang dilakukan pengguna terhadap mobil.
-users: Menyimpan informasi pengguna yang memberikan penawaran harga.
+Database Structure
+Main Tables:
+products: Stores car data (brand, model, year, and price).
+bids: Stores the bid history made by users for cars.
+users: Stores information about users who place bids.
 ERD:
-Diagram hubungan antar tabel dapat ditemukan di folder docs/ dengan nama ERD.png.
+The Entity-Relationship Diagram (ERD) can be found in the docs/ folder under the file name ERD.png.
 
-Langkah-Langkah Proyek
-Pembuatan Database:
-
-Membuat tabel menggunakan perintah DDL.
-Struktur tabel tersedia dalam file queries.sql di folder docs/.
-Pengisian Data:
-
-Dummy dataset dibuat untuk mengisi tabel utama. Dataset ini tersedia dalam file used_car_sales_backup.sql.
-Query Transaksional:
-
-Meliputi penambahan, pengubahan, dan penghapusan data. Contoh query tersedia dalam file queries.sql.
-Query Analitik:
-
-Perbandingan rata-rata harga mobil dengan harga penawaran dalam 6 bulan terakhir.
-Identifikasi model mobil populer berdasarkan jumlah penawaran.
-Backup dan Restore:
-
-Proyek ini juga mencakup cara melakukan backup dan restore database menggunakan perintah pg_dump dan pg_restore.
-Hasil Analisis
-Model Mobil Paling Populer: Toyota Yaris memiliki jumlah penawaran tertinggi.
-Perbedaan Harga Mobil dan Penawaran: Perbedaan harga rata-rata untuk Toyota Yaris dalam 6 bulan terakhir adalah 3,46%.
-Analisis Harga Berdasarkan Waktu: Harga penawaran menunjukkan tren kenaikan dalam 6 bulan terakhir.
-Kesimpulan
-Proyek ini berhasil membangun database penjualan mobil bekas yang terstruktur dan melakukan analisis data untuk memberikan insight tentang pasar mobil bekas. Database ini siap digunakan untuk analisis lebih lanjut atau pengembangan fitur baru.
-
+Project Steps
+1. Database Creation:
+Created tables using DDL commands.
+The table structures are available in the queries.sql file in the docs/ folder.
+2. Data Insertion:
+A dummy dataset was created to populate the main tables.
+The dataset is provided in the used_car_sales_backup.sql file.
+3. Transactional Queries:
+Includes adding, updating, and deleting data.
+Example queries are included in the queries.sql file.
+4. Analytical Queries:
+Comparison of average car prices with bid prices in the last 6 months.
+Identification of the most popular car models based on the number of bids.
+5. Backup and Restore:
+The project includes instructions on how to back up and restore the database using the pg_dump and pg_restore commands.
+Analysis Results
+Most Popular Car Model: Toyota Yaris received the highest number of bids.
+Price and Bid Difference: The average price difference for Toyota Yaris in the last 6 months is 3.46%.
+Price Trends Over Time: Bid prices show an upward trend over the past 6 months.
+Conclusion
+This project successfully built a structured database for managing used car sales data and conducted data analysis to provide insights into the used car market. The database is ready for further analysis or new feature development.
